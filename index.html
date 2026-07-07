@@ -16,10 +16,27 @@ body{margin:0;background:#F8F7F4;color:#151515;font-family:Inter,sans-serif}
 .kicker{font-size:13px;letter-spacing:.32em;color:#777;margin-bottom:28px}
 h1{font-size:92px;line-height:.93;letter-spacing:-.055em;font-weight:800;margin:0 0 36px}
 p{font-size:28px;line-height:1.5;color:#666;max-width:620px;margin:0 0 38px}
-form{display:flex;max-width:760px;margin-top:10px;}
-input{flex:1;padding:20px 22px;border:none;border-radius:14px 0 0 14px;font-size:20px}
-button{padding:0 34px;background:#111;color:#fff;border:none;border-radius:0 14px 14px 0;font-size:20px;font-weight:700;cursor:pointer}
-button:hover{background:#2a2a2a}
+.cta{
+    max-width:620px;
+    margin-top:22px;
+}
+
+.waitlist-button{
+    width:100%;
+    padding:22px 34px;
+    background:#111;
+    color:#fff;
+    border:none;
+    border-radius:14px;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    transition:background .2s ease;
+}
+
+.waitlist-button:hover{
+    background:#2a2a2a;
+}
 @media (max-width:768px){
 .wrap{padding:36px 24px}
 .logo img{width:240px}
@@ -39,11 +56,19 @@ button{border-radius:14px;padding:18px}
 <div class="kicker">COMING SOON</div>
 <h1>Life runs on<br>invisible work.</h1>
 <p>Second Shift is the operational support modern women need to carry less, reclaim time, and make space for what matters.</p>
-<form onsubmit="event.preventDefault();alert('Next we will connect this form to Loops.');">
-<input type="email" placeholder="Enter your email">
-<button>JOIN THE WAITLIST</button>
-</form>
+<div class="cta">
+    <button
+        class="waitlist-button"
+        data-tally-open="2E5VEV"
+        data-tally-layout="modal"
+        data-tally-width="500"
+        data-tally-overlay="1"
+        data-tally-emoji-animation="none">
+        JOIN THE WAITLIST
+    </button>
+</div>
 </section>
 </div>
+<script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
