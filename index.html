@@ -10,32 +10,52 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#F8F7F4;color:#151515;font-family:Inter,sans-serif}
-.wrap{max-width:1200px;margin:0 auto;padding:64px 80px 80px}
-.logo img{width:270px;height:auto;display:block}
-.hero{margin-top:90px;max-width:720px}
+.wrap{
+    max-width:1200px;
+    margin:0 auto;
+    padding:88px 80px 100px;
+}
+.logo img{width:250px;height:auto;display:block}
+.hero{
+  margin-top:105px;
+    max-width:610px;
+}
 .kicker{font-size:13px;letter-spacing:.32em;color:#777;margin-bottom:28px}
 h1{font-size:92px;line-height:.93;letter-spacing:-.055em;font-weight:800;margin:0 0 36px}
-p{font-size:28px;line-height:1.5;color:#666;max-width:620px;margin:0 0 38px}
+p{font-size:28px;line-height:1.5;color:#555;max-width:620px;margin:0 0 38px}
 .cta{
     max-width:620px;
-    margin-top:22px;
+    margin-top:34px;
 }
 
 .waitlist-button{
-    width:100%;
-    padding:22px 34px;
-    background:#111;
-    color:#fff;
-    border:none;
-    border-radius:14px;
-    font-size:20px;
-    font-weight:700;
-    cursor:pointer;
-    transition:background .2s ease;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  width:320px;
+  max-width:100%;
+  height:60px;
+
+  background:#111;
+  color:#fff;
+  border:none;
+  border-radius:18px;
+
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:.02em;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.waitlist-button{
+    transition:.2s ease;
 }
 
 .waitlist-button:hover{
-    background:#2a2a2a;
+    transform:translateY(-1px);
+    background:#222;
 }
 @media (max-width:768px){
 .wrap{padding:36px 24px}
@@ -56,16 +76,15 @@ button{border-radius:14px;padding:18px}
 <div class="kicker">COMING SOON</div>
 <h1>Life runs on<br>invisible work.</h1>
 <p>Second Shift is the operational support modern women need to carry less, reclaim time, and make space for what matters.</p>
-<div class="cta">
-    <button
-        class="waitlist-button"
-        data-tally-open="2E5VEV"
-        data-tally-layout="modal"
-        data-tally-width="500"
-        data-tally-overlay="1"
-        data-tally-emoji-animation="none">
-        JOIN THE WAITLIST
-    </button>
+<div class="button-wrap">
+  <button
+    class="waitlist-button"
+    data-tally-open="2E5VEV"
+    data-tally-layout="modal"
+    data-tally-width="500"
+    data-tally-emoji-animation="none">
+    JOIN THE WAITLIST
+  </button>
 </div>
 </section>
 </div>
