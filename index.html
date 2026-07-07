@@ -1,35 +1,51 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Second Shift</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}body{margin:0;background:#F8F7F4;color:#151515;font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+body{margin:0;background:#F8F7F4;color:#151515;font-family:Inter,sans-serif}
 .wrap{max-width:1200px;margin:0 auto;padding:64px 80px 80px}
-.logo img{width:290px;height:auto;display:block}
-.hero{margin-top:110px;max-width:760px;animation:fade .7s ease}
+.logo img{width:340px;height:auto;display:block}
+.hero{margin-top:90px;max-width:720px}
 .kicker{font-size:13px;letter-spacing:.32em;color:#777;margin-bottom:28px}
 h1{font-size:92px;line-height:.93;letter-spacing:-.055em;font-weight:800;margin:0 0 36px}
 p{font-size:28px;line-height:1.45;color:#555;max-width:700px;margin:0 0 38px}
 .label{font-size:24px;font-weight:600;margin-bottom:18px}
 form{display:flex;max-width:760px}
-input{flex:1;padding:20px 22px;border:1px solid #d9d9d9;border-right:none;border-radius:14px 0 0 14px;font-size:19px;outline:none}
-button{padding:0 34px;background:#111;color:#fff;border:none;border-radius:0 14px 14px 0;font-weight:700;font-size:17px;cursor:pointer;transition:.2s}
+input{flex:1;padding:20px 22px;border:1px solid #d9d9d9;border-right:none;border-radius:14px 0 0 14px;font-size:20px}
+button{padding:0 34px;background:#111;color:#fff;border:none;border-radius:0 14px 14px 0;font-size:20px;font-weight:700;cursor:pointer}
 button:hover{background:#2a2a2a}
-@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@media(max-width:768px){.wrap{padding:36px 24px}.logo img{width:210px}.hero{margin-top:70px}h1{font-size:58px}p{font-size:22px}.label{font-size:20px}form{flex-direction:column;gap:12px}input,button{border-radius:12px;border:1px solid #d9d9d9}button{padding:18px}}
-</style></head>
-<body><div class="wrap">
+@media (max-width:768px){
+.wrap{padding:36px 24px}
+.logo img{width:240px}
+.hero{margin-top:70px}
+h1{font-size:58px}
+p{font-size:22px}
+form{flex-direction:column}
+input{border-right:1px solid #d9d9d9;border-radius:14px;margin-bottom:12px}
+button{border-radius:14px;padding:18px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
 <div class="logo"><img src="logo.png" alt="Second Shift"></div>
 <section class="hero">
 <div class="kicker">COMING SOON</div>
 <h1>Life runs on<br>invisible work.</h1>
 <p>Second Shift is the operational support modern women need to carry less, reclaim time, and make space for what matters.</p>
 <div class="label">Join the waitlist.</div>
-<form onsubmit="event.preventDefault();">
+<form onsubmit="event.preventDefault();alert('Next we will connect this form to Loops.');">
 <input type="email" placeholder="Enter your email">
-<button>Join the waitlist</button>
+<button>JOIN THE WAITLIST</button>
 </form>
-</section></div></body></html>
+</section>
+</div>
+</body>
+</html>
